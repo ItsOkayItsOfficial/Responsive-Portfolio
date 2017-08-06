@@ -1,0 +1,347 @@
+/*
+* Author: Alex P
+* Project Name: Responsive Portfolio
+* Version: 1.0
+* Date: 07-25-2017
+*/
+
+
+/*=============================================
+Base Styles & Fonts
+=============================================*/
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+}
+
+.wrapper {
+    min-height: 100%;
+    padding: 0 0 100px;
+    position: relative;
+}
+
+hr {
+    opacity: .5;
+    height: 1px;
+    background-color: #ccc;
+}
+
+div {
+    display: inline-block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #4aaaa5;
+}
+
+p {
+    text-align: justify;
+}
+
+h3 {
+    font-size: 20px;
+    color: #4aaaa5;
+}
+
+header {
+    border-bottom: 2px solid #ccc;
+}
+
+footer {
+    background-color: grey;
+    border-top: 8px solid #4aaaa5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 10px;
+    text-align: center;
+    color: white;
+    padding: 35px 16px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+figure {
+    width: 155px;
+    height: 75px;
+    padding: 6px;
+    display: static;
+}
+
+figcaption {
+    background-color: #4aaaa5;
+    width: 100%;
+    height: 35px;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    margin-top: -70px;
+    font-family: 'Open Sans', sans;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    background-color: white;
+}
+
+li a {
+    float: left;
+    padding: 4px;
+}
+
+header li a {
+    float: right;
+    color: #ccc;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+}
+
+li h1 {
+    text-align: center;
+    background-color: #4aaaa5;
+    float: left;
+    width: 250px;
+    color: #fff;
+    padding: 25px;
+    text-decoration: none;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+}
+
+textarea[type=message] {
+    width: 100%;
+    height: 200px;
+    padding: 10px 10px;
+    margin: 8px 0 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #ccc;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ccc;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ccc;
+}
+
+
+/*=============================================
+Classes
+=============================================*/
+
+.container {
+    margin-right: 15%;
+    margin-left: 15%;
+    display: block;
+}
+
+.container.body {
+    padding-top: 40px;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+}
+
+.portfolio {
+    margin: -5px;
+}
+
+
+/*=============================================
+IDs
+=============================================*/
+
+#main {
+    width: 60%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 40px 30px 30px 30px;
+    margin-bottom: 130px;
+}
+
+img {
+    padding-right: 15px;
+    float: left;
+}
+
+#connect {
+    float: right;
+    width: 20%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 30px 30px;
+}
+
+
+/*=============================================
+Media
+=============================================*/
+
+@media (max-width: 980px) {
+    #main {
+        width: 50%;
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 40px 30px 30px 30px;
+        margin-bottom: 130px;
+    }
+    img {
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    #connect {
+        text-align: center;
+        width: 30%;
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 30px 30px;
+    }
+    li a {
+        float: right;
+        padding: 0;
+    }
+    .portfolio {
+        padding-right: 15px;
+    }
+    figure {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        margin-right: 11%;
+        margin-left: 3%;
+    }
+
+    #main {
+        width: 100%;
+        padding: 40px 30px 0px 30px;
+        margin-bottom: 20px;
+    }
+
+    img {
+        padding-right: 15px;
+        float: left;
+        width: 50%;
+    }
+
+    #connect {
+        float: none;
+        width: 100%;
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    li a {
+        float: left;
+        padding: 0;
+    }
+
+    .portfolio {
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    figure {
+        width: 40%;
+        height: 60px;
+        margin: 5px;
+        display: inline-block;
+        position: relative;
+    }
+
+    figure img {
+            float: left;
+            padding-bottom: 10px;
+            width: 100%;
+    }
+
+    figcaption {
+        background-color: #4aaaa5;
+        width: 50%;
+        height: 35px;
+        text-align: center;
+        padding-top: 15px;
+        color: white;
+        margin-top: -70px;
+        font-family: 'Open Sans', sans;
+    }
+
+    
+}
+
+@media (max-width: 640px) {
+    header {
+        display: inline-block;
+    }
+
+    header ul {
+        width: 100%;
+    }
+}
